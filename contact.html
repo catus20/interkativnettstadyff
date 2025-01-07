@@ -21,41 +21,30 @@
 </header>
 
 <body>
-	
-
-	<div class="countdown-container">
-		<div>
-			<h3 id="h2">Nedtelling IPX 2025</h3>
-		</div>
-		
-		<div id="countdown">
-			<div class="time">
-				<span id="days">0</span>
-				<p>Dager</p>
-			</div>
-			<div class="time">
-				<span id="hours">0</span>
-				<p>Timer</p>
-			</div>
-			<div class="time">
-				<span id="minutes">0</span>
-				<p>Minutter</p>
-			</div>
-			<div class="time">
-				<span id="seconds">0</span>
-				<p>Sekunder</p>
-			</div>
-		</div>
-	</div>
-	<div id="image-container">
-        <img src="https://ipx.gg/wp-content/uploads/2023/10/IMG_0571-scaled.jpg" alt="Frontpage Image" id="frontpage-image">
-    </div>
-
+	<div class="kontaktdiv">
+		<h1> Har du lyst til å være med på IPX?</h1>
+	</div>		
 	<div id="menu" class="menu">
 		<a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">&times;</a>
 		<a href="index.html">Heim</a>
 		<a href="about.html">Om</a>
 		<a href="contact.html">Kontakt</a>
+	</div>
+
+
+	<div class="contact-form">
+		<form action="/submit_form" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="message">Message:</label>
+			<input type="text" id="message" name="message" required>
+	
+			<button type="submit">Submit</button>
+		</form>
 	</div>
 </body>
 
